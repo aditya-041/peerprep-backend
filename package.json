@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "dev": "ts-node-dev --respawn --transpile-only index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
     "postbuild": "cp -r node_modules dist/ || xcopy node_modules dist\\ /E /I",
     "clean": "rm -rf dist"
@@ -16,7 +16,9 @@
     "mongoose": "^7.5.0",
     "cors": "^2.8.5",
     "axios": "^1.5.0",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/cors": "^2.8.13",
     "@types/node": "^20.5.0",

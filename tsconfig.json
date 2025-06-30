@@ -2,9 +2,9 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "commonjs",
-    "lib": ["ES2020", "DOM"],
-    "outDir": "./dist",
-    "rootDir": "./",
+    "lib": ["ES2020"],
+    "outDir": "dist",
+    "rootDir": "src",                      // ✅ Source files live in "src"
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -15,6 +15,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
-  "include": ["**/*.ts"],
+  "include": ["src/**/*.ts"],              // ✅ Only include .ts files inside src
   "exclude": ["node_modules", "dist"]
 }
